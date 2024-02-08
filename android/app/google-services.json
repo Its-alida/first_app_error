@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "453235995148",
+    "project_id": "first-b1eca",
+    "storage_bucket": "first-b1eca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453235995148:android:6375069e77c1ba870d3429",
+        "android_client_info": {
+          "package_name": "com.example.first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453235995148-64g5hqau12843j14tdt2f84q4i52ad3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.first_app",
+            "certificate_hash": "bc708f0eb66a33c5c7281e37309c1ea35142d8fb"
+          }
+        },
+        {
+          "client_id": "453235995148-co3qput2e1cif2ovkn8f6eiasjsvrpsk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.first_app",
+            "certificate_hash": "42126bd348488f0a1bc012dfbb5dfa3d078e3990"
+          }
+        },
+        {
+          "client_id": "453235995148-5l2j55othud7847s875is56ttd6qq1ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC943TDT-E46RCHB6-Wj4Naz1Lv9jZRupI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453235995148-5l2j55othud7847s875is56ttd6qq1ca.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "453235995148-7aq8ueciisthoc18fasquv0j9sv9q70m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firstv1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453235995148:android:54b0d1867d1462f50d3429",
+        "android_client_info": {
+          "package_name": "com.example.firstv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453235995148-5l2j55othud7847s875is56ttd6qq1ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC943TDT-E46RCHB6-Wj4Naz1Lv9jZRupI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453235995148-5l2j55othud7847s875is56ttd6qq1ca.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "453235995148-7aq8ueciisthoc18fasquv0j9sv9q70m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firstv1.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
