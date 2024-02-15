@@ -141,7 +141,7 @@ Widget _buildProfileSection() {
           ),
         ],
       ),
-      const SizedBox(height: 16), // Add some vertical space between text and button
+      const SizedBox(height: 16),
       ElevatedButton(
         onPressed: () {
           Navigator.push(
