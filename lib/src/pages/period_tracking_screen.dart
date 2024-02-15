@@ -38,16 +38,16 @@ class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
             const SizedBox(height: 16.0),
             TextFormField(
               decoration: const InputDecoration(
-                labelText: 'Average Period Length',
-                hintText: 'Enter average period length (24-38 days)',
+                labelText: 'Average Cycle length',
+                hintText: 'Enter average cycle length (5-7 days)',
               ),
               keyboardType: TextInputType.number,
             ),
             const SizedBox(height: 16.0),
             TextFormField(
               decoration: const InputDecoration(
-                labelText: 'Average Cycle Length',
-                hintText: 'Enter average cycle length (5-7 days)',
+                labelText: 'Average Period Length',
+                hintText: 'Enter average period length (24-38 days)',
               ),
               keyboardType: TextInputType.number,
             ),
@@ -58,6 +58,13 @@ class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
             ElevatedButton(
               onPressed: () => _showPrediction(),
               child: const Text('Show Prediction'),
+            ),
+            const SizedBox(height: 5.0),
+            Image.asset(
+              'assets/period_img.png', // Replace with the actual image asset path
+              height: 240, // Adjust the height as needed
+              width: 240, // Adjust the width as needed
+              fit: BoxFit.cover, // Adjust the fit property as needed
             ),
           ]
         ),

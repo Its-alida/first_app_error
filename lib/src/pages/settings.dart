@@ -128,7 +128,7 @@ class _SettingsPageState extends State<SettingsPage> {
           ],
         ),
       ),
-      backgroundColor: Color.fromARGB(255, 250, 250, 250), // Set the background color here
+      backgroundColor: const Color.fromARGB(255, 250, 250, 250), 
     );
   }
 }
