@@ -1,3 +1,4 @@
+// whole page made using generative AI
 import 'package:flutter/material.dart';
 
 class CommunityPage extends StatefulWidget {
@@ -9,7 +10,7 @@ class CommunityPage extends StatefulWidget {
 }
 
 class _CommunityPageState extends State<CommunityPage> {
-  List<String> communityGroups = ['WeWomen', 'GrannyGang']; 
+  List<String> communityGroups = ['WeWomen', 'GrannyGang'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,41 +27,37 @@ class _CommunityPageState extends State<CommunityPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              
               const Text(
                 'Community',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-                const Text(
-                  '                                   Create ',
-                  style: TextStyle(color: Colors.pink),
-                ),
+              const Text(
+                '                                   Create ',
+                style: TextStyle(color: Colors.pink),
+              ),
               IconButton(
                 icon: const Icon(
                   Icons.add,
                   color: Colors.pink,
-                ), 
-
+                ),
                 onPressed: () {
                   // Implement logic to add a new community group
                   _createCommunityGroup();
                 },
               ),
-              
             ],
           ),
-
           Image.asset(
-                'assets/community.jpg', 
-                height: 150,
-                width: double.infinity, 
-                fit: BoxFit.cover,
-              ),
+            'assets/community.jpg',
+            height: 150,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
           const SizedBox(height: 50),
           const Text(
-                'Other Communities',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
+            'Other Communities',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
           const SizedBox(height: 20),
           _buildCommunityGroups(),
         ],

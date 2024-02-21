@@ -1,9 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'sign_in_5.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -38,9 +35,6 @@ class _SplashScreenState extends State<SplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             logo(),
-            // const SizedBox(
-            //   height: 25,
-            // ),
             richText(30),
           ],
         ),
@@ -49,11 +43,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Widget logo() {
-    // Use Image.asset instead of SvgPicture.asset
     return Image.asset(
       'assets/splash_image.png',
-      // height: height_,
-      // width: width_,
     );
   }
 
@@ -89,7 +80,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Text(
           'By Team Aarohi',
           style: GoogleFonts.inter(
-            fontSize: fontSize - 10, // Adjust the size as needed
+            fontSize: fontSize - 10,
             color: const Color.fromARGB(255, 78, 76, 77),
             fontWeight: FontWeight.w200,
           ),

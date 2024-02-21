@@ -1,3 +1,4 @@
+// full pgae made using generative AI
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -11,7 +12,7 @@ class SettingsPage extends StatefulWidget {
 
 class _SettingsPageState extends State<SettingsPage> {
   late String selectedImagePath;
-  late bool textOption1Checked = true; 
+  late bool textOption1Checked = true;
   late bool textOption2Checked = true;
 
   @override
@@ -25,8 +26,8 @@ class _SettingsPageState extends State<SettingsPage> {
   Future<void> _pickImage() async {
     // ignore: no_leading_underscores_for_local_identifiers
     final ImagePicker _picker = ImagePicker();
-    final XFile? pickedFile = await _picker.pickImage(source: ImageSource.gallery);
-    
+    final XFile? pickedFile =
+        await _picker.pickImage(source: ImageSource.gallery);
 
     if (pickedFile != null) {
       setState(() {
@@ -39,41 +40,39 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:  const Color.fromARGB(255, 255, 195, 222),
+        backgroundColor: const Color.fromARGB(255, 255, 195, 222),
         title: const Text('Settings'),
       ),
-      body:
-       Padding(
-         padding: const EdgeInsets.fromLTRB(20.0, 80.0, 40.0, 40.0),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(20.0, 80.0, 40.0, 40.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
               child: Column(
-              children: [
-              GestureDetector(
-              onTap: _pickImage,
-              child: CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage(selectedImagePath),
+                children: [
+                  GestureDetector(
+                    onTap: _pickImage,
+                    child: CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage(selectedImagePath),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Profile Photo',
+                    style: TextStyle(fontSize: 22),
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 20),
-            const Text(
-              'Profile Photo',
-              style: TextStyle(fontSize: 22),
-            ),
-            ],
-            ),
-            ),
-            
             const SizedBox(height: 20),
             const Text(
               'Other Settings',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
-                ),
+              ),
             ),
             Row(
               children: [
@@ -103,7 +102,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    ),
+                  ),
                 ),
                 Checkbox(
                   value: textOption2Checked,
@@ -116,19 +115,18 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ],
             ),
-            
-             const Padding(
-              padding: EdgeInsets.only(left: 10.0), 
+            const Padding(
+              padding: EdgeInsets.only(left: 10.0),
               child: Text(
                 'Disabling this will stop others from seeing you in matching searches',
-                style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 109, 108, 108)),
+                style: TextStyle(
+                    fontSize: 16, color: Color.fromARGB(255, 109, 108, 108)),
               ),
             ),
-           
           ],
         ),
       ),
-      backgroundColor: const Color.fromARGB(255, 250, 250, 250), 
+      backgroundColor: const Color.fromARGB(255, 250, 250, 250),
     );
   }
 }

@@ -4,6 +4,7 @@ class UserProfilePage extends StatefulWidget {
   const UserProfilePage({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _UserProfilePageState createState() => _UserProfilePageState();
 }
 
@@ -27,9 +28,9 @@ class _UserProfilePageState extends State<UserProfilePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-              'Enter the following data',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
+                'Enter the following data',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
               _buildTextField('Age', ageController),
               const SizedBox(height: 16),
               _buildTextField('Weight (kg)', weightController),
@@ -55,7 +56,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
         labelText: label,
-        border: OutlineInputBorder(),
+        border: const OutlineInputBorder(),
       ),
     );
   }
@@ -65,7 +66,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
         ? Container(
             width: 150,
             height: 150,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.blue,
             ),
@@ -98,7 +99,8 @@ class _UserProfilePageState extends State<UserProfilePage> {
         builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('Invalid Input'),
-            content: const Text('Please enter valid numbers for age, weight, and height.'),
+            content: const Text(
+                'Please enter valid numbers for age, weight, and height.'),
             actions: [
               TextButton(
                 onPressed: () {
